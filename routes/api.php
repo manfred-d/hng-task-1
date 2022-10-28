@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController;
 // Route::get('/users', function(){
 //     return 'product';
 // });
-ROute::get('/users', [UserController::class,'index']);
+Route::get('/users', [UserController::class,'index']);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
