@@ -47,6 +47,6 @@ class UserController extends Controller
             'operation_type' => $operation_type
         ]);
 
-        $response = json_decode($response->getContent());
+        $response = json_decode($response->getContent())->header('Content-Type', 'application/json');
     }
 }
