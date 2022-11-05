@@ -16,7 +16,8 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [UserController::class, 'index']);
 // hngi task 2
-Route::get('/math', [UserController::class, 'calculate']);
+Route::post('/math', [UserController::class, 'calculate']);
+
 
 // Route::get('/', function () {
 //     return view('welcome');
